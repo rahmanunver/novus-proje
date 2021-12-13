@@ -16,6 +16,9 @@ app.get('/projects', function(req, res) {
 app.get('/contact-us', function(req, res) {
     res.sendFile(path.join(__dirname, '/public/contact.html'));
 });
+app.get('/about-us', function(req, res) {
+    res.sendFile(path.join(__dirname, '/public/about-us.html'));
+});
 
 
 app.listen(process.env.PORT || port, () => { console.log(`Example app listening at http://localhost:${port}`) })
