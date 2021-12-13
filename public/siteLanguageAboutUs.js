@@ -16,12 +16,8 @@ const mobileLink3 = document.querySelector(".mobileLink3")
 const footerBrand = document.querySelector(".footerBrand")
 
 // About Us Page
-const aboutUsText1 = document.querySelector(".aboutUsText1")
-const aboutUsText2 = document.querySelector(".aboutUsText2")
-const aboutUsText3 = document.querySelector(".aboutUsText3")
-const aboutUsText4 = document.querySelector(".aboutUsText4")
-const aboutUsText5 = document.querySelector(".aboutUsText5")
-
+const aboutUs1 = document.querySelector(".aboutUs1")
+const aboutUs2 = document.querySelector(".aboutUs2")
 function changeTexts() {
     if (localStorage.getItem('siteLanguange') === "tr") {
         lngBtnTr.classList.add("active");
@@ -38,11 +34,8 @@ function changeTexts() {
         footerBrand.innerText = "NOVUS Proje Danışmanlığı & Yönetimi"
 
         // About Us Page
-        aboutUsText1.innerText = "NOVUS DANIŞMANLIK & PROJE YÖNETİMİ"
-        aboutUsText2.innerText = "Şirketimiz bünyesinde Mimari, statik, mekanik, elektrik projeleri hizmeti verilmektedir. Şirket merkezi Kazakistan Astana şehrindedir. Şirketimizin Türkiye'de de ofisi bulunmaktadır. Kazakistan ve Rusya federasyonu bölgesinde yerel normlara uygun proje hizmeti vermektedir."
-        aboutUsText3.innerText = "Grup Şirketleri"
-        aboutUsText4.innerText = "PİRAMİDA CONSTRUCTION GROUP, Kazakistan"
-        aboutUsText5.innerText = "ARGOS CONSTRCUTION, Özbekistan"
+        aboutUs1.innerText = "NOVUS PROJE DANIŞMANLIK VE YÖNETİMİ"
+        aboutUs2.innerText = "Firmamız Mimari Tasarım ve Uygulama Projeleri hazırlama hizmeti vermektedir. Tüm proje disiplinlerinin eşzamanlı hazırlanması ve projelerdeki uyumun sağlanması prensibi ile çalışmaktadır. Bünyemizde Mimari, Statik, Mekanik ve Elektrik  projeleri  gerçek anlamda uygulama projesi niteliğinde hazırlanmaktadır.  Muhtelif yapı türlerinde proje hizmetleri sunmaktayız. Konut, Ticaret binaları, Yönetim Binaları, Eğitim Binaları ve Endüstriyel tesislerde tecrübemiz bulunmaktadır. Ağırlıklı olarak Yurtdışı projeleri  yapmaktayız. Özellikle Rusya Federasyonu ve eski Sovyet Cumhuriyeti Devletlerinde yerel normlara göre proje çözümleri sunmaktayız.  Bu ülkelerdeki yerel idarelerden gerekli onayları alabilecek deneyim, uzmanlık ve organizasyon yapısına sahibiz  2000 yılından beri Özbekistan ve Kazakistan’da çeşitli yapı sınıflarından onlarca proje tamamladık. Kazakistan’daki Faliyetlerimizi  “Piramida Construction Grup” isimli Grup şirkettimiz üzerinden yapmaktayız. Şirketimizin Kazakistan’da geniş kapsamlı iş  ve proje yapma lisansları bulunmaktadır."
     } else if (localStorage.getItem('siteLanguange') === "ru") {
         lngBtnTr.classList.remove("active");
         lngBtnRu.classList.add("active");
@@ -59,11 +52,8 @@ function changeTexts() {
         footerBrand.innerText = "Проектная компания- «NOVUS DANIŞMANLIK & PROJE YÖNETİMİ»."
 
         // About Us Page
-        aboutUsText1.innerText = "Проектная компания- «NOVUS DANIŞMANLIK & PROJE YÖNETİMİ»."
-        aboutUsText2.innerText = "В нашей компании предоставляются услуги в сфере  архитектурной деятельности: Головной офис находится на территории Казахстана в г.Нур-Cултан и на территории Турции в г.Стамбул.Наша компания предоставляет проектные услуги в соответсвии с местными нормами в регионе Казахстана и Российской Феферации."
-        aboutUsText3.innerText = "Группы компаний:"
-        aboutUsText4.innerText = "PIRAMİDA CONSTRUCTION GROUP, Казахстан"
-        aboutUsText5.innerText = "ARGOS CONSTRUCTION, Узбекистан"
+        aboutUs1.innerText = "NOVUS PROJE DANIŞMANLIK VE YÖNETİMİ (НОВУС ПРОЖЕ ДАНЫШМАНЛЫК ВЕ ЁНЕТИМ) НОВУС КОНСАЛТИНГ И УПРАВЛЕНИЕ ПРОЕКТАМИ"
+        aboutUs2.innerText = "Наша компания предоставляет услуги по подготовке архитектурного дизайна и рабочих проектов. Мы работаем по принципу одновременной подготовки всех проектных дисциплин и соответствий в этих проектах. Разрабатываем рабочие проекты разделов архитектурные, конструктивные, инженерные , электрические технические решения. Основная деятельность компании это - зарубежные проекты. Мы предлагаем проектные решения в соответствии с местными строительными нормами и правилами , особенно в Российской Федерации и странах бывшего Советского Союза. Имеем знания и опыт в организации предоставления документов в местные исполнительные органы , которые позволяют получить необходимые разрешения в этих странах. С 2000 года мы реализовали различные проекты в Узбекистане и Казахстане. В Казахстане ,мы осуществляем свою деятельность через ТОО «Pıramida Construction Group» которая входит в нашу группу компаний. Эта компания имеет лицензии на ведение бизнеса и проектирования в Казахстане. Мы предлагаем услуги по проектированию различных типов зданий. У нас есть опыт работы в жилищном строительстве, коммерческих и административных зданиях, образовательных и промышленных объектах."
     }
 }
 

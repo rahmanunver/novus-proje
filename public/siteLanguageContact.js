@@ -7,6 +7,7 @@ const link1 = document.querySelector(".link1")
 const link2 = document.querySelector(".link2")
 const link3 = document.querySelector(".link3")
 
+const mobileLink0 = document.querySelector(".mobileLink0")
 const mobileLink1 = document.querySelector(".mobileLink1")
 const mobileLink2 = document.querySelector(".mobileLink2")
 const mobileLink3 = document.querySelector(".mobileLink3")
@@ -18,12 +19,14 @@ const footerBrand = document.querySelector(".footerBrand")
 const contactUsTitle = document.querySelector(".contactUsTitle")
 const contactUsInfo1 = document.querySelector(".contactUsInfo1")
 const contactUsInfo2 = document.querySelector(".contactUsInfo2")
+const contactUsInfo3 = document.querySelector(".contactUsInfo3")
+const contactUsInfo4 = document.querySelector(".contactUsInfo4")
 
 function changeTexts() {
     if (localStorage.getItem('siteLanguange') === "tr") {
         lngBtnTr.classList.add("active");
         lngBtnRu.classList.remove("active");
-
+        
         link0.innerText = "Ana Sayfa"
         link1.innerText = "Hakkımızda"
         link2.innerText = "Projeler"
@@ -32,14 +35,14 @@ function changeTexts() {
         mobileLink1.innerText = "Hakkımızda"
         mobileLink2.innerText = "Projeler"
         mobileLink3.innerText = "İletişim"
-
+        
         footerBrand.innerText = "NOVUS Proje Danışmanlığı & Yönetimi"
-
+        
         // Contact Us Page
-        contactUsTitle.innerText = "Contact Us Title Tr"
-        contactUsInfo1.innerText = "Contact Us Info1 Tr"
-        contactUsInfo2.innerText = "Contact Us Info2 Tr"
-
+        contactUsTitle.innerText = "İletişim Bilgilerimiz"
+        contactUsInfo1.innerText = "Türkiye ofisi: "
+        contactUsInfo3.innerText = "Kazakistan ofisi:"
+        
     } else if (localStorage.getItem('siteLanguange') === "ru") {
         lngBtnTr.classList.remove("active");
         lngBtnRu.classList.add("active");
@@ -56,9 +59,9 @@ function changeTexts() {
         footerBrand.innerText = "Проектная компания- «NOVUS DANIŞMANLIK & PROJE YÖNETİMİ»."
 
         // Contact Us Page
-        contactUsTitle.innerText = "Contact Us Title Ru"
-        contactUsInfo1.innerText = "Contact Us Info1 Ru"
-        contactUsInfo2.innerText = "Contact Us Info2 Ru"
+        contactUsTitle.innerText = "Связаться с нами"
+        contactUsInfo1.innerText = "Офис в Турции:"
+        contactUsInfo3.innerText = "Офис в Казахстане:"
     }
 }
 
